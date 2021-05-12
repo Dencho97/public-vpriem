@@ -1,0 +1,54 @@
+.wrapper {
+    height: 100%;
+    &.auth {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+}
+
+.page {
+    &.login {
+        max-width: 300px;
+        padding: 0 6px;
+        .login-form-button {
+            width: 100%;
+        }
+    }
+}
+
+.login {
+    &_logo {
+        width: 80px;
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+    &_or {
+        margin: 10px 0;
+        text-align: center;
+    }
+    &-form {
+        width: 292px;
+    }
+    &_reset {
+        &-wrap {
+            margin: -20px 0 15px 0;
+            text-align: right;
+            .ant-btn-link {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .login {
+        &_reset {
+            &-wrap {
+                margin: 15px 0;
+            }
+        }
+    }
+}

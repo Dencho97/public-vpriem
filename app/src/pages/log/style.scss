@@ -1,0 +1,19 @@
+.log {
+    &_item {
+        &.delete {
+            .ant-timeline-item-head {
+                border-color: #e94e1e;
+            }
+        }
+        &.update {
+            .ant-timeline-item-head {
+                border-color: #ffe0a0;
+            }
+        }
+        &.create {
+            .ant-timeline-item-head {
+                border-color: #1ab958;
+            }
+        }
+    }
+}

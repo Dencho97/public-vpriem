@@ -1,0 +1,152 @@
+.workers {
+    &__items {
+        display: flex !important;
+        flex-wrap: wrap !important;
+	      margin-bottom: 15px;
+        &_add {
+            height: 80px;
+	        margin-bottom: 15px;
+            button { 
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &__item {
+            margin: 0 0 15px 0;
+            .ant-carousel {
+                height: 300px;
+            }
+            &_image {
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-color: white;
+                &.loading {
+                    background-color: #f9f9f9;
+                    display: flex !important;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        height: 35px;
+                        opacity: .5;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__form {
+        &_photo {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            &-wrap {
+                .ant-form-item-control {
+                    height: 247px;
+                    .ant-upload.ant-upload-drag {
+                        background: none;
+                        .ant-upload-btn {
+                            padding: 0;
+                        }
+                        p.ant-upload-text {
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    &-schedule-table {
+        table {
+            td {
+                padding: 0 !important;
+            }
+            th {
+                padding: 3px 0 !important;
+            }
+        }
+        &_group-title {
+            text-align: center !important;
+        }
+        &__item {
+            $item: &;
+            padding: 0;
+            position: relative;
+            height: 33px;
+            box-sizing: border-box;
+            &_time {
+                opacity: 1;
+                transition: ease-in opacity .2s;
+            }
+            &__actions {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: ease-in opacity .2s;
+                &.selected {
+                    opacity: 1;
+                }
+                button {
+                    border: 0;
+                    background: none;
+                    padding: 0;
+                    cursor: pointer;
+                    outline: none;
+                }
+                &_add {
+                    color: white;
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--primiry-color) !important;
+                }
+                &_remove {
+                    color: #ff4d4f;
+                    margin: 0 0 0 10px;
+                }
+            }
+            &.active {
+                background-color: var(--primiry-color);
+                color: white;
+                padding: 6px 0;
+            }
+            &:hover:not(.disable) {
+                #{$item} {
+                    &__actions {
+                        opacity: 1;
+                    }
+                    &_time {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    &_btn-edit-schedule-close, &_btn-edit-holidays-close {
+        margin: 0 0 0 15px;
+    }
+}
+
+@media(max-width: 767px) {
+    .workers {
+        &__filter {
+            margin: 0 0 20px 0;
+            .ant-form-item {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

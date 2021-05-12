@@ -1,0 +1,41 @@
+.roles {
+    &__form {
+        &_permissions-fileds {
+            .ant-typography {
+                margin: 0 0 24px 0;
+            }
+            .ant-form-item {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                &-label {
+                    width: 35%;
+                }
+            }
+        }
+        &_category {
+            margin-bottom: 24px;
+        }
+    }
+    .ant-table-body {
+        .ant-tag {
+            margin-bottom: 4px;
+            margin-top: 4px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .roles {
+        &__form {
+            &_permissions-fileds {
+                .ant-form-item-label {
+                    width: 80%;
+                }
+                .ant-form-item-control-wrapper {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

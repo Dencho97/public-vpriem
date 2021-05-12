@@ -1,0 +1,20 @@
+@media(max-width: 767px) {
+    .services {
+        &__items {
+            display: block !important;
+            flex-wrap: unset;
+            &_add {
+                margin: 0 0 15px 0;
+                height: 293px;
+            }
+            &__item {
+                .ant-carousel {
+                    height: auto;
+                }
+                &_image {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

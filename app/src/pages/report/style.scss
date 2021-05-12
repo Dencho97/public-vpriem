@@ -1,0 +1,42 @@
+.report {
+    &__export {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin: -15px 0 -16px 0;
+        &_btn {
+            background: none;
+            border: none;
+            outline: none;
+            padding: 0;
+            color: var(--primiry-color);
+            cursor: pointer;
+            font-size: 1.3125rem;
+        }
+        &_download {
+            margin: 0 0 0 10px;
+        }
+    }
+    &__filter {
+        .ant-select {
+            width: 100%;
+        }
+        .ant-calendar-picker,
+        .ant-select {
+            margin-bottom: 15px;
+        }
+        .ant-calendar-picker-input {
+            text-transform: capitalize;
+        }
+    }
+    &__chart {
+        &-1 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        &-2, &-3, &-4, &-5, &-6 {
+            height: 600px;
+        }
+    }
+}

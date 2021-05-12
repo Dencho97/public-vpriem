@@ -1,0 +1,31 @@
+.wrapper {
+    height: 100%;
+    &.reset-password {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+}
+
+.page {
+    &.reset-password {
+        max-width: 300px;
+        padding: 0 6px;
+        .form-button {
+            width: 100%;
+        }
+    }
+}
+
+.reset-password {
+    &_logo {
+        width: 80px;
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+    &-form {
+        width: 292px;
+    }
+}

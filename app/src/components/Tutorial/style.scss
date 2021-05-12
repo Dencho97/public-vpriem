@@ -1,0 +1,105 @@
+.introjs {
+    &-helperLayer {
+        box-shadow:  rgba(0, 0, 0, .45) 0px 0px 0px 5000px !important;
+        z-index: 10000000;
+    }
+    &-tooltip {
+        padding: 25px;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+        &-header {
+            padding: 0;
+        }
+    }
+    &-tooltipReferenceLayer {
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        }
+    }
+    &-tooltiptext {
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
+    &-skipbutton {
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.65);
+        padding: 0;
+        &:hover {
+            color: var(--primiry-color);
+        }
+    }
+    &-progress {
+        border-radius: 100px;
+        height: 8px;
+        background-color: #f5f5f5;
+        margin: 20px 0 0 0;
+    }
+    &-progressbar {
+        list-style: 8px;
+        background-color: var(--primiry-color);
+    }
+    &-tooltipbuttons {
+        margin: 20px 0 0 0;
+        padding: 0;
+        border-top: 0;
+    }
+    &-button {
+        line-height: 30px;
+        position: relative;
+        display: inline-block;
+        font-weight: 400;
+        white-space: nowrap;
+        text-align: center;
+        background-image: none;
+        border: 1px solid transparent;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .02);
+        cursor: pointer !important;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        user-select: none;
+        touch-action: manipulation;
+        height: 32px;
+        padding: 0 15px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: rgba(0,0,0,.65);
+        background-color: #fff;
+        border-color: #d9d9d9;
+        box-sizing: border-box;
+        &:focus, &:hover {
+            background: #fff;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, .02);
+            border-color: var(--primiry-color-hover);
+            color: var(--primiry-color-hover);
+        }
+        &:active {
+            color: var(--primiry-color-active);
+            background-color: #fff;
+            border-color: var(--primiry-color-active);
+        }
+    }
+    &-nextbutton {
+        color: #fff;
+        background-color: var(--primiry-color);
+        border-color: var(--primiry-color);
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .05);
+        &:focus, &:hover {
+            color: #fff;
+            background-color: var(--primiry-color-hover);
+            border-color: var(--primiry-color-hover);
+        }
+        &:active {
+            color: #fff;
+            background-color: var(--primiry-color-active);
+            border-color: var(--primiry-color-active);
+        }
+    }
+    &-disabled {
+        color: rgba(0,0,0,.25) !important;
+        background-color: #f5f5f5 !important;
+        border-color: #d9d9d9 !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        cursor: not-allowed !important;
+    }
+}

@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteCond %{REQUEST_URI} ^\/api\/(.*)$
+  RewriteCond %{REQUEST_FILENAME} !-f 
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^api\/(.*)$ api/$1 [L]
+
+  RedirectMatch 403 ^/images/?$
+  RedirectMatch 403 ^/files/?$
+  RedirectMatch 403 ^/api/?$
+  RedirectMatch 403 ^/app/?$
+  RedirectMatch 403 ^/configs/?$
+  RedirectMatch 403 ^/favicons/?$
+
+  RewriteRule ^favicons\/(.*)$ $0 [L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.html [L]
+
+</IfModule>

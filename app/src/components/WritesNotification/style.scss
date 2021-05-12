@@ -1,0 +1,54 @@
+.writes-notifications {
+    &_btn {
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 10px 0 0;
+        border: none;
+        background: none;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        .anticon {
+            font-size: 1.25rem;
+            transition: ease-in .2s;
+            &:hover {
+                color: var(--primiry-color);
+            }
+        }
+        &.ant-popover-open {
+            .anticon {
+                color: var(--primiry-color);
+            }
+        }
+    }
+    &_popover {
+        max-width: 30%;
+        .ant-popover-inner-content {
+            max-height: 600px;
+            overflow: auto;
+            .ant-comment-inner {
+                padding: 0;
+            }
+            .ant-divider-horizontal {
+                margin: 0 0 1rem 0;
+            }
+        }
+    }
+    &_text {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-align: left;
+        display: inline-block;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        transition: ease-in .2s;
+        &:hover {
+            color: var(--primiry-color);
+        }
+    }
+}

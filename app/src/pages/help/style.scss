@@ -1,0 +1,11 @@
+.page {
+    .help {
+        &__form {
+            max-width: 300px;
+            margin: 0 auto;
+            textarea {
+                height: 150px;
+            }
+        }
+    }
+}

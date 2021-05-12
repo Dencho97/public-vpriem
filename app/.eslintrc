@@ -1,0 +1,53 @@
+{
+    "extends": "eslint-config-airbnb",
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "rules": {
+        "id-length": 0,
+        "react/no-multi-comp": 0,
+        "import/default": 0,
+        "import/no-duplicates": 0,
+        "import/named": 0,
+        "import/namespace": 0,
+        "import/no-unresolved": 0,
+        "import/no-named-as-default": 2,
+        "comma-dangle": 0,
+        "linebreak-style": 0,
+        "indent": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "no-console": 0,
+        "no-alert": 0,
+        "no-unused-vars": [1, { "varsIgnorePattern": "_", "argsIgnorePattern": "_" }],
+        "no-underscore-dangle": ["error", { "allow": ["_browserHistory", "__data"] }],
+        "react/forbid-prop-types": "off",
+        "max-len": "off",
+        "no-restricted-syntax": "off",
+        "click-events-have-key-event": "off",
+        "no-noninteractive-element-interactions": "off",
+        "react/no-will-update-set-state": "off",
+        "no-plusplus": "off",
+        "import/prefer-default-export": "off",
+        "guard-for-in": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off"
+    },
+    "plugins": [
+        "react", "import"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "classes": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    }
+}

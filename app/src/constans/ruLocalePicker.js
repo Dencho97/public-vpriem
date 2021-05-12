@@ -1,0 +1,40 @@
+export default {
+  lang: {
+    locale: 'ru_RU',
+    placeholder: 'Выбрать дату',
+    rangePlaceholder: ['Начальная дата', 'Конечная дата'],
+    today: 'Сегодня',
+    now: 'Сейчас',
+    backToToday: 'Вернуться назад',
+    ok: 'ОК',
+    clear: 'Очистить',
+    month: 'Месяц',
+    year: 'Год',
+    timeSelect: 'Выбрать время',
+    dateSelect: 'Выбрать день',
+    monthSelect: 'Выбрать месяц',
+    yearSelect: 'Выбрать год',
+    decadeSelect: 'Выбрать десятилетие',
+    yearFormat: 'YYYY',
+    dateFormat: 'M/D/YYYY',
+    dayFormat: 'D',
+    dateTimeFormat: 'M/D/YYYY HH:mm:ss',
+    monthFormat: 'MMMM',
+    monthBeforeYear: true,
+    previousMonth: 'Предыдущий месяц (PageUp)',
+    nextMonth: 'Следующий месяц (PageDown)',
+    previousYear: 'Предыдущий год (Control + left)',
+    nextYear: 'Следующий год (Control + right)',
+    previousDecade: 'Предыдущее десятилетие',
+    nextDecade: 'Следующее лесятилетие',
+    previousCentury: 'Предыдущий век',
+    nextCentury: 'Следующий век'
+  },
+  timePickerLocale: {
+    placeholder: 'Выбрать время'
+  },
+  dateFormat: 'YYYY-MM-DD',
+  dateTimeFormat: 'YYYY-MM-DD HH:mm:ss',
+  weekFormat: 'YYYY-wo',
+  monthFormat: 'YYYY-MM'
+};
